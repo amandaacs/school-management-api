@@ -1,12 +1,13 @@
 package com.project.schoolmanagementapi.repository;
 
 import com.project.schoolmanagementapi.model.Aluno;
+import com.project.schoolmanagementapi.model.Turma;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
 public interface AlunoRepository extends JpaRepository<Aluno,Integer> {
 
-    List<Aluno> findByTurma(Integer turmaId);
+    List<Aluno> findByTurma(Turma turma);
 
 }
