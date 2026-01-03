@@ -1,4 +1,4 @@
-INSERT INTO turma (nome, ano) VALUES
+INSERT INTO turma (codigo, ano) VALUES
                                   ('1º Ano A', 2025),
                                   ('1º Ano B', 2025),
                                   ('2º Ano A', 2025);

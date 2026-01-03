@@ -1,7 +1,7 @@
 package com.project.schoolmanagementapi.dto.turma;
 
 public record TurmaSummary(
-        Long id,
+        Integer id,
         String codigo,
         Integer ano
 ) {

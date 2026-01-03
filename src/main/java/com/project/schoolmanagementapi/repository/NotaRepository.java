@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface NotaRepository extends JpaRepository<Nota,Long> {
+public interface NotaRepository extends JpaRepository<Nota,Integer> {
 
-    List<Nota> findByAlunoId(Long alunoId);
+    List<Nota> findByAlunoId(Integer alunoId);
 
-    Optional<Nota> findByAlunoIdAndDisciplinaId(Long  alunoId, Long disciplinaId);
+    Optional<Nota> findByAlunoIdAndDisciplinaId(Integer alunoId, Integer disciplinaId);
 
 }

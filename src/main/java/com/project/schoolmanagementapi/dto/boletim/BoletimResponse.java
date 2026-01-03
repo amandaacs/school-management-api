@@ -5,7 +5,7 @@ import com.project.schoolmanagementapi.dto.nota.NotaResponse;
 import java.util.List;
 
 public record BoletimResponse(
-        Long alunoId,
+        Integer alunoId,
         String alunoNome,
         String matricula,
         String turmaCodigo,

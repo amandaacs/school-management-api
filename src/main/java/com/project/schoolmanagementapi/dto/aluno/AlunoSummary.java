@@ -1,7 +1,7 @@
 package com.project.schoolmanagementapi.dto.aluno;
 
 public record AlunoSummary(
-        Long id,
+        Integer id,
         String nome,
         String matricula
 ) {

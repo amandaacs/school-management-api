@@ -1,7 +1,7 @@
 package com.project.schoolmanagementapi.dto.disciplina;
 
 public record DisciplinaResponse(
-        Long id,
+        Integer id,
         String nome
 ) {
 }

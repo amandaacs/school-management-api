@@ -5,8 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface AlunoRepository extends JpaRepository<Aluno,Long> {
+public interface AlunoRepository extends JpaRepository<Aluno,Integer> {
 
-    List<Aluno> findByTurma(Long turmaId);
+    List<Aluno> findByTurma(Integer turmaId);
 
 }

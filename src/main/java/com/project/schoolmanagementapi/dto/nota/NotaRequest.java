@@ -1,8 +1,8 @@
 package com.project.schoolmanagementapi.dto.nota;
 
 public record NotaRequest(
-        Long alunoId,
-        Long disciplinaId,
+        Integer alunoId,
+        Integer disciplinaId,
         Double valor
 ) {
 }
