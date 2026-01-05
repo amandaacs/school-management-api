@@ -15,6 +15,7 @@ Este projeto foi desenvolvido como desafio técnico, seguindo boas práticas de 
 - Hibernate
 - SQLite
 - Maven
+- OpenPDF (geração de PDF)
 
 ---
 
@@ -65,7 +66,23 @@ cd school-management-api
 mvn spring-boot:run
 
 # A aplicação será iniciada em:
-http://localhost:808
+http://localhost:8080
+```
+
+## Interface Web
+
+O projeto inclui uma interface web simples, desenvolvida com HTML, CSS e JavaScript, servida diretamente pelo Spring Boot.
+A interface permite:
+
+- Listar turmas
+- Listar alunos por turma
+- Lançar notas
+- Visualizar boletim do aluno
+- Gerar boletim em PDF
+
+Acesso
+```
+http://localhost:8080/index.html
 ```
 ---
 
@@ -80,7 +97,7 @@ GET /turmas
 ### Alunos
 - Listar alunos por turma
 ```
-GET /alunos/turma/{turmaId}
+GET /turmas/{id}/alunos
 ```
 
 ### Disciplinas
@@ -104,7 +121,7 @@ Exemplo de body
 ```
 
 ### Boletim
-- GET /boletim/alunos/{id}
+- Gerar boletim
 ```
 GET /boletins/alunos/{id}
 ```
@@ -128,6 +145,13 @@ Exemplo de resposta
   ]
 }
 ```
+
+- Gerar boletim em PDF
+```
+GET /boletins/alunos/{id}/pdf
+```
+
+
 
 ## Funcionalidades Implementadas
 
