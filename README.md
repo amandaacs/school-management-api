@@ -163,6 +163,19 @@ GET /boletins/alunos/{id}/pdf
 - Uso de DTOs para resposta da API
 - Banco SQLite integrado via JPA/Hibernate
 
+## Evidências de Execução
+Abaixo estão exemplos de execução dos recursos do sistema via interface:
+- Listagem de turmas
+![Listagem de turmas](docs/listagem_turmas.png)
+- Listagem de alunos por turma
+![Listagem de alunos por turma](docs/listagem_alunos_por_turma.png)
+- Lançamento de nota
+![Lançamento de nota](docs/lancar_nota.png)
+- Visualização do boletim do aluno
+![Visualização do boletim do aluno](docs/gerar_boletim.png)
+- Geração do boletim em PDF
+![Geração do boletim em PDF](docs/boletim_pdf.png)
+
 ## Observações Técnicas
 
 1. O Boletim não é uma entidade persistida, sendo gerado dinamicamente a partir dos dados do banco.
@@ -176,7 +189,7 @@ GET /boletins/alunos/{id}/pdf
 
 ## Diagrama do Banco de Dados
 
-![Diagrama do banco](database-diagram.svg)
+![Diagrama do banco](docs/database-diagram.svg)
 
 ## Autora
 
