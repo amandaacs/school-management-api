@@ -1,0 +1,13 @@
+section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+input {
+    margin-right: 5px;
+}
+
+button {
+    margin-right: 5px;
+}

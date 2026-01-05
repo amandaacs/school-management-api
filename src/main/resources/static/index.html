@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Escolar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Sistema de Gestão Escolar</h1>
+
+    <section>
+        <h2>Turmas</h2>
+        <button onclick="listarTurmas()">Listar Turmas</button>
+        <pre id="turmasOutput"></pre>
+    </section>
+
+    <section>
+        <h2>Alunos por Turma</h2>
+        <input type="number" id="turmaId" placeholder="ID da turma">
+        <button onclick="listarAlunos()">Buscar</button>
+        <pre id="alunosOutput"></pre>
+    </section>
+
+    <section>
+        <h2>Lançar Nota</h2>
+        <input type="number" id="alunoNotaId" placeholder="ID do aluno">
+        <select id="disciplinaId">
+            <option value="">Selecione a disciplina</option>
+        </select>
+        <input type="number" id="valorNota" placeholder="Nota">
+        <button onclick="lancarNota()">Salvar</button>
+        <pre id="notaOutput"></pre>
+    </section>
+
+    <section>
+        <h2>Boletim</h2>
+        <input type="number" id="alunoBoletimId" placeholder="ID do aluno">
+        <button onclick="verBoletim()">Visualizar</button>
+        <button onclick="baixarPdf()">PDF</button>
+        <pre id="boletimOutput"></pre>
+    </section>
+
+</body>
+</html>
